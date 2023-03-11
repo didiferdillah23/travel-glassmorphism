@@ -1,0 +1,92 @@
+@font-face {
+    font-family: "montserratBlack";
+    src: url('../font/Montserrat-Black.ttf')
+}
+@font-face {
+    font-family: "nunito";
+    src: url('../font/Nunito-Regular.ttf');
+}
+
+body {
+    background-image: url('../img/mountain.jpg');
+    background-size: cover;
+    background-position-y: -70;
+}
+
+.navbar {
+    height: 70px;
+    font-family: nunito;
+    font-weight: bold;
+    backdrop-filter: blur(10px);
+}
+
+.nav-link.btn {
+    color: white !important;
+    font-weight: bold;
+    border-radius: 200px;
+    background-color: rgba(0,0,0,0.4);
+}
+
+h1 {
+    margin-top: 50px;
+    font-family: montserratBlack;
+    font-size: 70px;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+p {
+    font-family: nunito;
+    color: white;
+    text-shadow: 2px 2px 1px black;
+    font-size: 25px;
+    margin: 25px 0;
+}
+
+form {
+    border-radius: 200px;
+    padding: 25px 20px;
+    backdrop-filter: blur(10px);
+    background-color: rgba(0,0,0,0.2);
+}
+
+input {
+    border: none;
+    font-family: nunito;
+    font-weight: bold;
+    padding-left: 15px;
+    height: 45px;
+}
+
+input:focus {
+    outline: none;
+}
+
+input#from {
+    border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+    border-right: 3px solid rgba(0,0,0,0.3);
+}
+
+input#date {
+    border-left: 3px solid rgba(0,0,0,0.3);
+    padding-right: 15px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+form button {
+    border: none;
+    background-color: white;
+    border-radius: 200px;
+    font-family: nunito;
+    font-weight: bold;
+    margin-left: 7px;
+    transition: 0.6s
+}
+
+form button:hover {
+    background-color: black;
+    color: white;
+    height: 45px;
+}
